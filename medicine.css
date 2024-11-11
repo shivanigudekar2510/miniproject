@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Andika& display=swap');
+
+:root{
+    --black: black;
+    --purple: purple;
+    --light-color:#666;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+    }
+    *{
+    font-family: 'andika';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+    }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 7rem;
+        scroll-behavior: smooth;
+        }
+        body{
+        background: #fff;
+        }
+        /*header*/
+        .header {
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        justify-content: space-between;
+        padding: 2rem 9%;
+        background: #fff;
+        z-index: 1000;
+        box-shadow: var(--box-shadow);
+    
+        }
+        .header.logo img{
+            margin-top: 10px;
+            height: 100px;
+            width: 65px;
+            display: inline-block;
+            }
+        
+        .header .headbar a{
+            font-size: 1.7rem;
+            border-radius: .5rem;
+            padding: .5rem 1.5rem;
+            color: var(--light-color);
+        }
+            .header .headbar a:hover {
+                color: #fff;
+                background: Linear-gradient(120deg, #283651 , #0070fa,#50e2fc);
+                }
+                .header .menubtn{
+                margin-right: 60px;
+                }
+                .header .menubtn button{
+                padding: 10px 45px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                border: none;
+                background-image: Linear-gradient(to right, #283651, #0070fa, #50e2fc);
+                border-radius: 10px;
+                }
+
+                .header .icon div{
+                    cursor: pointer;
+                    margin-left: .5rem;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4.5rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    color: var(--black);
+                    border-radius: 50%;
+                    background: #eee;
+                }
+                .header .icon div:hover{
+                    color: #fff;
+                background: Linear-gradient(120deg, #283651 , #0070fa,#50e2fc);
+                }
+
+                .header .search-form{
+                    border: 1px solid;
+                    position: absolute;
+                    top: 110%;
+                    right: -110%;
+                    width: 50%;
+                    height: 5rem;
+                    background: #fff;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: var(--box-shadow);
+                }
+                .header .search-form.active{
+                    right: 2rem;
+                }
+                
+                .header .search-form input{
+                    height: 100;
+                    width: 100%;
+                    text-transform: none;
+                    font-size: 1.6rem;
+                    color: var(--black);
+                    padding: 0 1.5rem;
+
+                }
+                .header .search-form label{
+                    font-size: 2.2rem;
+                    padding-right: 1.5rem;
+                    color: var(--black);
+                    cursor: pointer;
+                }
+                .header .search-form lable:hover{
+                    color: var(--drak-pink);
+                }
+                .header .shopping-cart{
+                    position: absolute;
+                    top: 110;
+                    right: -110%;
+                    width: 35rem;
+                    padding: 1rem;
+                    box-shadow: var(--box-shadow);
+                    background: #fff;
+                    border-radius: .5rem;
+                }
+                .header .shopping-cart.active{
+                    right: 2rem;
+                    transition: -4s linear;
+                }
+                .header .shopping-cart .box{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    position: relative;
+                    margin: 1rem 0;
+                }
+                .header .shopping-cart .box img{
+                    height:10rem;
+                    width: 8rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    padding-left: 3rem;
+                }
+                .header .shopping-cart .box .fa-trash{
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 30rem;
+                    cursor: pointer;
+                    color: var(--light-color);
+                    transform: translate(-50%);
+                }
+                .header .shopping-cart .box .fa-trash:hover{
+                    color: var(--drak-pink);
+                }
+                .header .shopping-cart .box .content h3{
+                    color: var(--black);
+                    font-size: 1.7rem;
+                    padding-bottom: 1rem;
+                }
+                .header .shopping-cart .box .content span{
+                    color: var(--light-color);
+                    font-size: 1.6rem;
+                    padding-bottom: 1rem;
+                }
+                .header .upload-form{
+                    border: 1px solid;
+                    position: absolute;
+                    top: 110%;
+                    right: 2rem;
+                    width: 50rem;
+                    height: 5rem;
+                    background: #fff;
+                    border-radius: .5rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: var(--box-shadow);
+
+                }
+                .header .upload-form .btn{
+                    height: 50px;
+                    width: 200px;
+                    
+                }
+
+                .header .upload-form .btn button{
+                    height: 100%;
+                    width: 100%;
+                    background: linear-gradient(120deg, #FAB2FF 40%,#663399);
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .header .upload-form .btn button:hover{
+                    background: var(--drak-pink);
+                }
+                .header .upload-form .file-name{
+                    position: relative;
+                    font-size: 18px;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    margin-left: 15px;
+                    user-select: none;
+                }
+
+            /*header*/
